@@ -1,0 +1,23 @@
+---
+title: "Word Prediction App: Codebook"
+output: html_document
+---
+
+This codebook is a brief explanation of how this app was done. In order to reproduce the app, run the follow R scripts in order.
+
+### R scripts
+
+1. **getdata.R**: Download the corpora dataset and select a sample;  
+2. **cleandata.R**: Clean up the dataset with the following steps:
+  * Convert all text to lowercase  
+  * Convert special characters  
+  * Strip whitespaces  
+  * Remove punctuation, dashes, numbers and URL  
+  * Remove words with low frequency (< 3);  
+3. **getngrams.R**: Generate n-grams for n = 2, 3, 4, 5, 6;  
+4. **createenv.R**: Creates the enviornment that will be read on shiny;  
+5. **stupidbf.R**: *Stupid Backoff* Algorithm to predict the next word;  
+
+**Shiny App**:  
+- **ui.R**: User interface of the application  
+- **server.R**: server-side of the application  

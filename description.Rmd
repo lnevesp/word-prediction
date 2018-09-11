@@ -1,0 +1,11 @@
+---
+title: "Word Prediction App: Method Description"
+author: "Leonardo Neves Pinto"
+date: "July 18, 2016"
+output: html_document
+---
+
+**Method**:
+
+Using n-gram (n = 1, 2, 3, 4, 5) data it was implemented a [Stupid Backoff Algorithm](http://www.aclweb.org/anthology/D07-1090.pdf). In this method whenever you go back 1 level you multiply the odds by 0.4. This method is faster then Kneser-Ney for large amounts of data while mentains its quality.
+

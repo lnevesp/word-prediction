@@ -1,0 +1,6 @@
+---
+title: "About the author"
+---
+
+Hi! My name is Leonardo Neves and I'm statistician
+
